@@ -1,4 +1,5 @@
 import React from "react";
+import BlogPage from "../BlogPage/BlogPage";
 import Header from "../Header/Header";
 import Hero from "../HeroSection/Hero";
 import Home1 from "../Home1/Home1";
@@ -13,6 +14,7 @@ const Home = () => {
       <Home1 />
       <Home2 />
       <Home3 />
+      <BlogPage />
     </div>
   );
 };
