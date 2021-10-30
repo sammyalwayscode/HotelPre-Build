@@ -54,7 +54,7 @@ const FirstHold = styled.div`
 `;
 const CardOne = styled.img`
   width: 100%;
-  height: 300px;
+  height: 250px;
   border-radius: 20px;
   object-fit: cover;
 `;
@@ -70,7 +70,7 @@ const SecondHold = styled.div`
 `;
 const CardTwo = styled.img`
   width: 560px;
-  height: 300px;
+  height: 250px;
   border-radius: 20px;
   background-color: rebeccapurple;
   margin: 15px 0;
@@ -92,8 +92,8 @@ const ThirdHold = styled.div`
   }
 `;
 const CardThree = styled.img`
-  max-width: 350px;
-  height: 300px;
+  max-width: 400px;
+  height: 250px;
   border-radius: 20px;
   margin: 15px 0;
 `;

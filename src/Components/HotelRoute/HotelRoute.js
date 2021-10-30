@@ -1,40 +1,66 @@
 import React from "react";
 import styled from "styled-components";
-import cardImg from "../Images/luxx.jpg";
+import Header from "../Header/Header";
+import HotelSlider from "../HotelSlider/HotelSlider";
+import SlideBoot from "../HotSlideBoot/SlideBoot";
+import cardImg from "../Images/gff.jpg";
 
-const CardMain = () => {
+const HotelRoute = () => {
   return (
-    <CardMainDiv>
-      <SubCard>
-        <FirstText>Ajegunle, Lagos</FirstText>
-        <ImageCont src={cardImg} alt="Img" />
-        <HotelName>J5 Hotel & Suits</HotelName>
-        <HotelDesc>
-          Mobile app development is the act or process by which a mobile app is
-          developed for mobile
-        </HotelDesc>
-        <PriceDiv>24 Rooms</PriceDiv>
-        <CardBtnDiv>View All Rooms</CardBtnDiv>
-      </SubCard>
-    </CardMainDiv>
+    <Container>
+      <Header />
+      <Wrapper>
+        <SlideBoot />
+        <CardDivCtrl>
+          <CardMainDiv>
+            <SubCard>
+              <FirstText>Classic Room</FirstText>
+              <ImageCont src={cardImg} alt="Img" />
+              <HotelName>Room 205</HotelName>
+              <HotelDesc>
+                Mobile app development is the act or process by which a mobile
+                app is developed for mobile
+              </HotelDesc>
+              <PriceDiv>N2000</PriceDiv>
+              <CardBtnDiv>Add To Booking</CardBtnDiv>
+            </SubCard>
+          </CardMainDiv>
+        </CardDivCtrl>
+      </Wrapper>
+    </Container>
   );
 };
 
-export default CardMain;
+export default HotelRoute;
 
-// const Container = styled.div`
-//   height: 350px;
-//   width: 300px;
-//   background-color: rosybrown;
-//   border-radius: 8px;
-// `;
-// const Wrapper = styled.div``;
+const Container = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+`;
+const Wrapper = styled.div`
+  width: 85%;
+`;
+
+const CardDivCtrl = styled.div`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  @media screen and (max-width: 520px) {
+    justify-content: center;
+  }
+`;
 
 const CardMainDiv = styled.div`
   /* height: 400px; */
   width: 260px;
   /* background-color: #272727; */
-  /* margin: 15px; */
+  margin: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
